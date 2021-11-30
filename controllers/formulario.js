@@ -36,7 +36,31 @@ exports.create_post = function(req, res) {
         tipo_vivienda: req.body.tipo_vivienda,
         telefono: req.body.telefono,
         ecn: req.body.ecn,
-
+        direccion: req.body.direccion,
+        persona1: {
+            nombre: req.body.nombre1,
+            apellido: req.body.apellido1,
+            sexo: req.body.sexo1,
+            fecha_nacimiento: req.body.date1,
+            edad: req.body.edad1,
+            etnia: req.body.etnia1
+        },
+        persona2: {
+            nombre: req.body.nombre2,
+            apellido: req.body.apellido2,
+            sexo: req.body.sexo2,
+            fecha_nacimiento: req.body.date2,
+            edad: req.body.edad2,
+            etnia: req.body.etnia2
+        },
+        persona3: {
+            nombre: req.body.nombre3,
+            apellido: req.body.apellido3,
+            sexo: req.body.sexo3,
+            fecha_nacimiento: req.body.date3,
+            edad: req.body.edad3,
+            etnia: req.body.etnia3
+        }
     });
 
     form.save(function(err, form) {
