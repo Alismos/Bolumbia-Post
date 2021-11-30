@@ -1,4 +1,4 @@
-const { MongoClient, ObjectID } = require("mongodb");
+/*const { MongoClient, ObjectID } = require("mongodb");
 const Express = require("express");
 const Cors = require("cors");
 const BodyParser = require("body-parser");
@@ -17,26 +17,26 @@ server.use(bodyParser.json());
 
 var collection;
 
-server.post('/')
-    /*
-    server.get("/search", async(request, response) => {
-        try {
-            let result = await collection.aggregate([{
-                "$search": {
-                    "text": {
-                        "query": `${request.query.term}`, //
-                        "path": "ecn"
-                    }
+server.post('/')*/
+/*
+server.get("/search", async(request, response) => {
+    try {
+        let result = await collection.aggregate([{
+            "$search": {
+                "text": {
+                    "query": `${request.query.term}`, //
+                    "path": "ecn"
                 }
-            }]).toArray();
-            response.send(result);
-        } catch (e) {
-            response.status(500).send({ message: e.message });
-        }
-    });*/
+            }
+        }]).toArray();
+        response.send(result);
+    } catch (e) {
+        response.status(500).send({ message: e.message });
+    }
+});*/
 
 
-
+/*
 server.listen("3001", async() => {
     try {
         await client.connect();
@@ -44,4 +44,4 @@ server.listen("3001", async() => {
     } catch (e) {
         console.error(e);
     }
-});
+});*/

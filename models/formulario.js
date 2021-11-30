@@ -8,13 +8,13 @@ const personaSchema = Schema({
     fecha_nacimiento: Date,
     edad: String,
     etnia: String
-})
+});
 const FormSchema = Schema({
     personas: String,
     tipo_vivienda: String,
     telefono: String,
     ecn: String,
-})
+});
 
 /*const FormSchema = Schema({
     personas: Number,
@@ -24,4 +24,4 @@ const FormSchema = Schema({
     habitantes: [personaSchema]
 })*/
 
-module.export = mongoose.model('formulario', FormSchema);
+module.exports = mongoose.model('formulario', FormSchema);

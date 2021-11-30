@@ -10,6 +10,9 @@ var formularioRouter = require("./routes/formulario");
 var dataMongo = require("./database");
 var app = express();
 
+//var mongoose = require("mongoose");
+
+//mongoose.connect("mongodb+srv://alismo:kLQqogdZK8JvIyNJ@redbici.wzv6d.mongodb.net/DoS-database?retryWrites=true&w=majority");
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
@@ -28,6 +31,7 @@ app.use("/formulario", formularioRouter);
 app.use(function(req, res, next) {
     next(createError(404));
 });
+
 
 // error handler
 app.use(function(err, req, res, next) {

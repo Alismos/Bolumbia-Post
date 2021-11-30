@@ -19,19 +19,28 @@ server.use(BodyParser.urlencoded({ extended: true }));
 
 var collection;
 
+exports.interfaz = function(re, res) {
+    res.render("formulario/index");
+};
+
+exports.create_get = function(req, res) {
+    res.render("formulario/create");
+};
+
 exports.create_post = function(req, res) {
     console.log("POST /formulario");
     console.log(req.body);
 
-    let form = new Formulario();
-    form.personas = req.body.personas;
-    form.tipo_vivienda = req.body.tipo_vivienda;
-    form.telefono = req.body.telefono;
-    form.ecn = req.body.ecn;
+    var form = new Formulario({
+        personas: req.body.personas,
+        tipo_vivienda: req.body.tipo_vivienda,
+        telefono: req.body.telefono,
+        ecn: req.body.ecn,
 
-    form.save((err, formStored) => {
-        if (err) res.status(500).send({ message: `Error al salvar datos: ${err}` });
+    });
 
-        res.status(200).send({ form: formStored });
-    })
+    form.save(function(err, form) {
+        if (err) return res.status(500).send(err.message);
+        res.status(200).jsonp(form);
+    });
 };

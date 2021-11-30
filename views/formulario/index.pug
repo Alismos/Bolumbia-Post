@@ -1,24 +1,7 @@
-extends ../layout
-block content
-  a(href='/') Volver
-  br
-  br
-  br
-  h1 Nuevo formulario
-  br
-  br
+extend ../layout
 
-  form(action='/formulario/create',method='post')
-    label(for='id') Personas:
-    input#id(type='text' name='personas' ,required)
-    br
-    label(for='id') Tipo de vivienda:
-    input#id(type='text' name='tipo_vivienda' ,required)
-    br
-    label(for='id') Telefono:
-    input#id(type='text' name='tipo_vivienda' ,required)
-    br
-    label(for='lat') ECN:
-    input#id(type='text' name='lat',required)
-    br
-    input.btn(type='submit' name='OK' )
+block content
+  a(href='http://localhost:3000') Home
+  br
+  br
+  a(href='/formulario/create') Empezar formulario

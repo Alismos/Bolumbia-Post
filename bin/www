@@ -5,9 +5,11 @@
  */
 
 var app = require("../appForm");
-var dataMon = require("../database.js");
 var debug = require("debug")("redbicicleta:server");
 var http = require("http");
+
+var mongoose = require("mongoose")
+mongoose.connect("mongodb+srv://alismo:kLQqogdZK8JvIyNJ@redbici.wzv6d.mongodb.net/DoS-database?retryWrites=true&w=majority")
 
 /**
  * Get port from environment and store in Express.
