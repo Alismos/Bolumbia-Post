@@ -27,7 +27,7 @@ const FormSchema = Schema({
         apellido: { type: String },
         sexo: { type: String },
         fecha_nacimiento: { type: Date },
-        edad: { type: String },
+        edad: { type: Number },
         etnia: { type: String }
     },
     persona2: {
@@ -35,7 +35,7 @@ const FormSchema = Schema({
         apellido: { type: String },
         sexo: { type: String },
         fecha_nacimiento: { type: Date },
-        edad: { type: String },
+        edad: { type: Number },
         etnia: { type: String }
     },
     persona3: {
@@ -43,7 +43,7 @@ const FormSchema = Schema({
         apellido: { type: String },
         sexo: { type: String },
         fecha_nacimiento: { type: Date },
-        edad: { type: String },
+        edad: { type: Number },
         etnia: { type: String }
     }
 })
