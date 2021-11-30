@@ -35,7 +35,7 @@ exports.create_post = function(req, res) {
         personas: req.body.personas,
         tipo_vivienda: req.body.tipo_vivienda,
         telefono: req.body.telefono,
-        ecn: req.body.ecn,
+        cfn: req.body.cfn,
         direccion: req.body.direccion,
         persona1: {
             nombre: req.body.nombre1,
