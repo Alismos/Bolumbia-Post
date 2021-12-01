@@ -15,20 +15,19 @@ block content
       color:white;
     }
   button
-    a(href='/') Volver
-  br
+    a(href='/formulario' style="text-decoration:none") Volver
+
   br
   br
   h1 Formulario de Censo
   br
   br
   p1.
-   Bienvenidos al Censo Poblacional de la República de Bolumbia.
-   Por favor llene los campos solicitados con la información veraz 
-   y mas clara posible
+    Bienvenidos al Censo Poblacional de la República de Bolumbia.
+    Por favor llene los campos solicitados con la información veraz 
+    y mas clara posible
   br
   br
-
   form(action='/formulario/create',method='post')
     p ¿Cuantas Personas viven en el hogar?
     label(for='id') Personas:
