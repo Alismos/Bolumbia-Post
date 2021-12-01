@@ -1,7 +1,37 @@
 extend ../layout
 
 block content
-  a(href='http://localhost:3000') Home
-  br
-  br
-  a(href='/formulario/create') Empezar formulario
+      style.
+        body{
+          background-color: #33475b;
+          background-image: url(cendo.jpg);
+        }
+
+        p{
+          color: white;
+        }
+        h4{
+          color: white;
+        }
+      section.form-register
+      h4 Censo de la República de Bolumbia 
+      br
+      br
+      p.
+       Bienvenidos al Censo Poblacional de la República de Bolumbia.
+       A continuación será redirigido hacia el formulario en el cual
+       se encuentran los campos que deberá llenar.
+       Al hacer click en el botón "Empezar formilario", estará aceptando 
+       nuestras políticas establecidas.
+       Esta información será recogida y almacenada para la recogida
+       de diferentes estudios, además de tener datos concreto acerca
+       de la población de la república de Bolumbia
+      br
+      br
+      p
+        button 
+          a(href='http://localhost:3000') Home
+      
+      p   
+        button 
+          a(href='/formulario/create') Empezar formulario
