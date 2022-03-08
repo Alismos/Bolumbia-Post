@@ -1,5 +1,5 @@
 {
     
-    "databaseConnectionString": "mongodb://mongodb:27017/expresscart"
+    "databaseConnectionString": process.env.DATABASE_CONNECTION
 
 }
